@@ -26,7 +26,7 @@ document.getElementById("snapshot").innerHTML = '<img id="ci" src="'+data_uri+'"
     function speak(){
         var synth= window.speechSynthesis;
         sd1="The first prediction is" + p1
-        sd1=" And the second prediction is" + p2
+        sd2=" And the second prediction is" + p2
         var uT = new SpeechSynthesisUtterance(sd1 + sd2);
         synth.speak(uT);
     }
@@ -65,19 +65,19 @@ document.getElementById("snapshot").innerHTML = '<img id="ci" src="'+data_uri+'"
                 }
 
                 if (results[1].label == "Hi") {
-                    document.getElementById("e1").innerHTML="&#128075;";  
+                    document.getElementById("e2").innerHTML="&#128075;";  
                 }
                else if (results[1].label == "Good Job-Claps") {
-                    document.getElementById("e1").innerHTML="&#128079;";  
+                    document.getElementById("e2").innerHTML="&#128079;";  
                   }
                   else if (results[1].label == "Super") {
-                    document.getElementById("e1").innerHTML="&#128076;";  
+                    document.getElementById("e2").innerHTML="&#128076;";  
                   }
                   else if (results[1].label == "Good-Thumbs Up") {
-                    document.getElementById("e1").innerHTML="&#128077;";  
+                    document.getElementById("e2").innerHTML="&#128077;";  
                   }
                  else if (results[1].label == "Woo Hoo") {
-                    document.getElementById("e1").innerHTML="&#9994;";  
+                    document.getElementById("e2").innerHTML="&#9994;";  
                   }
         }
     }
